@@ -1,4 +1,28 @@
 # CUSTOMER COMPLAINTS MANAGEMENT AND RESPONSE ANALYSIS USING PYTHON AND POWERBI
+
+## TABLE OF CONTENT 
+- [ABSTRACT](#abstract)
+- [INTRODUCTION](#introduction)
+  -  [Background](#background)
+  -  [Problem Statement](#problem-statement)
+  -  [Objectives](#objectives)
+  -  [Data Source](#data-source) 
+- [DATA DESCRIPTION](#data-description)
+- [KEY PERFORMANCE INDICATORS](#key-performance-indicators)
+- [METHODOLOGY](#methodology)
+  -  [Data Cleaning](#data-cleaning)
+  -  [Exploratory Data Analysis](#exploratory-data-analysis)
+- [ANALYSIS](#analysis)
+  -  [Insights Uncovered](#insights-uncovered)
+  -  [Approach](#approach)
+- [RESULTS](#results)
+  -  [Summary of Findings](#summary-of-findings)
+  -  [Visualization](#visualization)
+ - [CONCLUSION](#conclusion)
+  -  [Summary](#summary)
+  -  [Recommendations](#recommendations)
+
+
 ________________________________________
 ## ABSTRACT 
 
@@ -24,7 +48,7 @@ Despite having a comprehensive complaint database, identifying actionable insigh
 2.	Evaluate the timeliness and effectiveness of company responses.
 3.	Provide actionable recommendations to improve customer advocacy and service quality.
 ________________________________________
-### Data Source: 
+### Data Source 
 
 The data used in this analysis was sourced from Cumulus Financial Internal database for a TDI data analysis project.
 
@@ -49,36 +73,47 @@ The dataset includes the following fields:
 -  Customer disputed- Whether the customer disputed the company’s resolution
 ________________________________________
 
-## KEY PERFORMANCE INDICATORS (KPI)
--  Total Number of Complaints (75,513): The analysis of the financial customer complaint dataset reveals that I have a total of 75,513 complaints. This significant number underscores the volume of customer dissatisfaction and the critical need for effective complaint management and resolution strategies.
+## KEY PERFORMANCE INDICATORS
+-  Total Number of Complaints (75,513):
+
+![Screenshot 2024-12-29 225531](https://github.com/user-attachments/assets/0c20080f-e8cb-471d-81b0-cce170b61c3f)
+
+The analysis of the financial customer complaint dataset reveals that I have a total of 75,513 complaints. This significant number underscores the volume of customer dissatisfaction and the critical need for effective complaint management and resolution strategies.
   
--  Total Number of State (62): Our analysis reveals that customer complaints have been recorded from a total of 62 states. By examining complaint patterns and trends across these states, I can identify regional disparities, tailor our responses to specific areas, and implement targeted strategies to enhance customer satisfaction worldwide.
+-  Total Number of State (62):
+  
+![Screenshot 2024-12-29 225555](https://github.com/user-attachments/assets/2de0f46b-e495-4018-af7d-add23bd1a29e)
 
--  Total Number of Product (7): Our analysis indicates that there are 7 distinct financial products in our dataset. These products encompass a wide range of financial services, each with its own unique set of customer complaints.
+Our analysis reveals that customer complaints have been recorded from a total of 62 states. By examining complaint patterns and trends across these states, I can identify regional disparities, tailor our responses to specific areas, and implement targeted strategies to enhance customer satisfaction worldwide.
 
--  Average Response Days (2.64): Our analysis shows that the average response time for addressing customer complaints is 2.64days. This metric is crucial as it reflects the efficiency and responsiveness of our complaint resolution process. A swift response time is essential for maintaining customer trust and satisfaction.
+-  Total Number of Product (7):
+  
+![Screenshot 2024-12-29 225730](https://github.com/user-attachments/assets/2683579a-ac35-4016-977c-529b9e2aae37)
+
+Our analysis indicates that there are 7 distinct financial products in our dataset. These products encompass a wide range of financial services, each with its own unique set of customer complaints.
+
+-  Average Response Days (2.64):
+
+![Screenshot 2024-12-29 225615](https://github.com/user-attachments/assets/43bbaefa-e2ef-4a9e-87d9-17bbcb4661d5)
+
+Our analysis shows that the average response time for addressing customer complaints is approx 3 days. This metric is crucial as it reflects the efficiency and responsiveness of our complaint resolution process. A swift response time is essential for maintaining customer trust and satisfaction.
 
 ## METHODOLOGY
 ### Data Cleaning
-Conducted data cleaning using python Click here to view my code base 
-1.	I reformatted the data columns from general to datetime, I also changed the date format for date received and date submitted.
-2.	I renamed the date submitted column properly.
-3.	I removed the company public response column.
-4.	Under the issue column, I changed advertising to advertising and marketing.
-5.	Under the product column, I changed the credit or prepaid card to just credit card after changing advertising to advertising and marketing.
-6.	Under the sub-product column, I changed (“) to (not specified).
-7.	I removed the tag column because of a substantial number of missing values.
-8.	I removed the customer consent provider column.
-9.	The Zip code field was removed from the dataset due to a high proportion of missing values.
 
-### Exploratory Data Analysis (EDA)
+Conducted data cleaning using python Click here to view my code base 
+
+
+### Exploratory Data Analysis
 1.	Analyzed the distribution of complaints by product, months of the year and state.
 2.	Investigated submission channels to determine customer preferences.
 3.	Evaluated the proportion of timely responses and disputed resolutions.
 ________________________________________
 
 ## ANALYSIS
-1.	Top Issues reported by customers 
+### Insights Uncovered
+
+#### 1.	Top Issues reported by customers 
 
 ![Screenshot 2024-12-21 223959](https://github.com/user-attachments/assets/c4519815-430a-41d8-aae9-f94c92c8401c)
 
@@ -86,7 +121,7 @@ ________________________________________
 
 In this analysis, the reported issues were initially visualized by counting the number of unique complaint IDs, resulting in a total of 87 reported issues. To identify the most frequent issues, the dataset was filtered using the filter pane feature, specifically applying the "Top N" function to isolate the top 5 most frequent issues. These top 5 issues were then displayed in a bar chart to provide a clear visual representation of the most common complaints. The findings indicated that the primary area of concern for Cumulus Financial customers was related to services involving account management, deposits, and withdrawals. These categories accounted for majority of the reported issues. Further analysis revealed that the credit card product emerged as the most challenging for customers to manage, with account management being the most frequently reported issue within this product category. This suggests that customers encountered significant difficulties when interacting with the credit card service, particularly in relation to account management processes.
 
-2.	Complaint Volumes Analysis by State and Product.
+#### 2.	Complaint Volumes Analysis by State and Product.
 
 
 ![Screenshot 2024-12-29 225142](https://github.com/user-attachments/assets/b457c4f2-f193-4953-b3db-ee9cb0fd62bb)
@@ -108,7 +143,7 @@ On the product front, the analysis revealed that the credit card product had an 
 
 The combination of regional factors, such as population density, and specific product-related issues, such as those with the credit card offering, highlights the areas where Cumulus Financial should focus its attention. Addressing these concerns could help reduce complaint volumes, improve customer satisfaction, and ensure that the company’s services are effectively meeting the needs of its diverse customer base across different states.
 
-3.	Most Utilized Submission Channels for Customer Complaints
+#### 3.	Most Utilized Submission Channels for Customer Complaints
 
 ![Screenshot 2024-12-29 225446](https://github.com/user-attachments/assets/5fdf463c-dc71-4492-97db-1db222cdc9fa)
 
@@ -127,7 +162,7 @@ Fax submissions were minimal, representing less than 2%, which underscores the d
 In contrast, Email submissions recorded the lowest number of complaints, signifying minimal usage. This may suggest that customers find other digital options, such as the web interface, more convenient and responsive, reducing the appeal of email-based complaint submissions. Streamlining or integrating email submissions into broader digital platforms could help consolidate resources while maintaining support for diverse customer needs.
 
 
-4.	Proportion of Complaints Resolved in a Timely Manner
+#### 4.	Proportion of Complaints Resolved in a Timely Manner
 
 
 ![Screenshot 2024-12-29 231406](https://github.com/user-attachments/assets/52d0acaa-1bbd-448a-aed1-f6aa001ba798)
@@ -144,7 +179,7 @@ Only 1.95% of complaints were not addressed in a timely manner. While this is a 
 The pie chart clearly highlights the organization's overall success in responding to customer complaints in a timely manner. The 98.05% timely response rate reflects a well-executed strategy focused on operational efficiency and customer satisfaction. Addressing the minor gap in untimely responses through targeted improvements will further solidify the organization’s position as a leader in customer service excellence.
 
 
-5.	Monthly Trends in Complaint Volumes
+#### 5.	Monthly Trends in Complaint Volumes
 
 
 ![Screenshot 2024-12-29 225418](https://github.com/user-attachments/assets/ac957d6d-efc3-4a08-b863-dc442d556afc)
@@ -161,7 +196,7 @@ A significant decline begins in September, continuing through November, where co
 In December, complaints slightly rebound to 5.4K. This may be linked to end-of-year financial product usage or unresolved holiday-related grievances. 
 
 
-6.	Average Response Time by Submission Channels
+#### 6.	Average Response Time by Submission Channels
 
 
 ![Screenshot 2024-12-29 225807](https://github.com/user-attachments/assets/6c979943-e121-45ec-aa64-20d5688c73fa)
@@ -183,7 +218,7 @@ Complaints submitted through the Web channel had the fastest average response ti
   
 Web-based submissions may benefit from structured input fields, ensuring that complaints are logged with all necessary details upfront, reducing delays caused by back-and-forth communication.
 
-7.	Quarterly Comparison of Complaint Volumes Over the Years
+#### 7.	Quarterly Comparison of Complaint Volumes Over the Years
 
 
 ![Screenshot 2024-12-29 230421](https://github.com/user-attachments/assets/bc66ea3e-998f-43a1-a96a-6ad5ffca49df)
@@ -208,7 +243,7 @@ By aggregating data from 2011 to 2020, the analysis eliminates outlier impacts a
 The area chart effectively captures these cumulative trends, offering a clear visual representation of how complaint volumes fluctuate throughout the year. Decision-makers can leverage this visualization to align resources and refine processes to address high-complaint quarters more efficiently. I used an area chart to visualize the date received column by the count of complaint ID, and by default this gave us the complaint ID per year which I then drilled down to get the complaint ID per quarter.
 
 
-8.	Trends and Patterns in Customer Disputes Over Time
+#### 8.	Trends and Patterns in Customer Disputes Over Time
 
 
 ![Screenshot 2024-12-23 233015](https://github.com/user-attachments/assets/17e06228-fa34-43e0-ad56-7c8a1dbc5578)
@@ -227,7 +262,7 @@ The analysis reveals a stark contrast between 2011-2016 and 2017-2020 due to the
 The high percentage of N/A responses (94.22%) in 2017-2020 highlights gaps in recording or reporting customer dispute information. This could be due to system limitations, process changes, or a lack of emphasis on capturing dispute data.  The steep decline in disputes and undisputed responses may not reflect actual improvements in customer satisfaction or company resolution processes but rather incomplete data for this period.  The absence of N/A values in 2011-2016 suggests that earlier periods had more robust data collection practices, whereas post-2016 processes appear less reliable.
 
 
-9.	Analysis of Customer Disputes on Company Responses
+#### 9.	Analysis of Customer Disputes on Company Responses
 
 
 ![Screenshot 2024-12-29 230933](https://github.com/user-attachments/assets/b6ef96b6-931d-4cda-a7e7-479e1323d669)
@@ -269,11 +304,15 @@ Closed with Explanation responses had the highest number of N/A entries. This ma
 
 ### Visualization
 
+![DASBOARD 1](https://github.com/user-attachments/assets/e1c11289-8a14-4173-8354-c1c1f7e5e0a9)
+
+![Screenshot 2024-12-29 232402](https://github.com/user-attachments/assets/0afc1883-5946-404c-bd4f-dca3403d68d9)
+
 Dashboards include:
-o	Complaint volumes by product, state, and year.
-o	Trends in submission channel preferences.
-o	Response efficiency metrics.
-o	To access the interactive PowerBI dashboard Click Here
+-  Complaint volumes by product, state, and year.
+-  Trends in submission channel preferences.
+-  Response efficiency metrics.
+-  To access the interactive PowerBI dashboard Click Here
 ________________________________________
 
 ## CONCLUSION
@@ -284,11 +323,28 @@ This analysis provides actionable insights into financial complaint trends, high
 
 ### Recommendations
 
-1.	Optimize Complaint Management During Key Periods: Strengthen customer support and operational readiness during high-complaint periods, particularly from March to May, by analyzing product types and issues reported during these peak months to identify common pain points. Additionally, focus on enhancing resolution processes before December to mitigate year-end issues and reduce future spillover complaints.
-2.	Optimize and Streamline Complaint Submission Channels: Enhance the web submission process with user-friendly interfaces, tracking systems, and prompt acknowledgment features to improve digital efficiency. Strengthen phone-based support to meet the needs of customers preferring direct interaction, ensuring high satisfaction rates. Strategically streamline lesser-used channels, such as fax, to improve cost-efficiency while maintaining accessibility for specific demographics. Additionally, analyze referral data to understand its impact and identify opportunities for strategic partnerships or process improvements.
-3.	Achieve and Sustain Timely Response Excellence: Prioritize timely responses by ensuring adequate staffing, implementing automation tools, and maintaining effective workflows in customer support operations. Address the 1.95% gap in delayed responses by investigating specific complaint types, submission channels, or operational bottlenecks, and implement targeted solutions to approach a 100% timely response rate. Regularly monitor performance trends using tracking tools to identify areas for further improvements, such as additional training, enhanced resources, or upgraded technology.
-4.	Optimize Complaint Resolution Across Submission Channels: Enhance email efficiency by implementing automation tools for prioritization and categorization while training staff to accelerate complaint processing. Maintain web channel efficiency by continuing investments in CRM systems and ensuring robust IT infrastructure to manage growing volumes. Standardize operational workflows across all channels to provide a consistent customer experience and minimize disparities in response times.
-5.	Action Plan to Address Data Gaps and Frequent Disputes: Conduct a thorough audit of N/A responses to identify the root causes of missing dispute data, uncovering patterns or operational gaps in the resolution process. Enhance the data tracking framework to ensure all complaints have complete and accurate records, improving the reliability of future analyses. Focus on cases involving monetary and non-monetary relief, addressing the underlying causes of higher dissatisfaction levels to improve overall customer resolution satisfaction.
-6.	Enhance Data Integrity and Customer Feedback Processes: Conduct a detailed review to understand why 94.22% of dispute data from 2017-2020 was marked as N/A, identifying whether the cause is technical, procedural, or systemic, and use these insights to improve future data collection. Implement uniform data collection standards to ensure consistency across all years and avoid gaps. Where possible, analyze annual trends separately to detect smaller patterns and better explain dispute trends. Additionally, investigate qualitative customer feedback from 2017-2020 to supplement the incomplete data and gain a deeper understanding of customer sentiment.
+#### 1.	Optimize Complaint Management During Key Periods:
+
+Strengthen customer support and operational readiness during high-complaint periods, particularly from March to May, by analyzing product types and issues reported during these peak months to identify common pain points. Additionally, focus on enhancing resolution processes before December to mitigate year-end issues and reduce future spillover complaints.
+
+#### 2.	Optimize and Streamline Complaint Submission Channels: 
+
+Enhance the web submission process with user-friendly interfaces, tracking systems, and prompt acknowledgment features to improve digital efficiency. Strengthen phone-based support to meet the needs of customers preferring direct interaction, ensuring high satisfaction rates. Strategically streamline lesser-used channels, such as fax, to improve cost-efficiency while maintaining accessibility for specific demographics. Additionally, analyze referral data to understand its impact and identify opportunities for strategic partnerships or process improvements.
+
+#### 3.	Achieve and Sustain Timely Response Excellence: 
+
+Prioritize timely responses by ensuring adequate staffing, implementing automation tools, and maintaining effective workflows in customer support operations. Address the 1.95% gap in delayed responses by investigating specific complaint types, submission channels, or operational bottlenecks, and implement targeted solutions to approach a 100% timely response rate. Regularly monitor performance trends using tracking tools to identify areas for further improvements, such as additional training, enhanced resources, or upgraded technology.
+
+#### 4.	Optimize Complaint Resolution Across Submission Channels: 
+
+Enhance email efficiency by implementing automation tools for prioritization and categorization while training staff to accelerate complaint processing. Maintain web channel efficiency by continuing investments in CRM systems and ensuring robust IT infrastructure to manage growing volumes. Standardize operational workflows across all channels to provide a consistent customer experience and minimize disparities in response times.
+
+#### 5.	Action Plan to Address Data Gaps and Frequent Disputes: 
+
+Conduct a thorough audit of N/A responses to identify the root causes of missing dispute data, uncovering patterns or operational gaps in the resolution process. Enhance the data tracking framework to ensure all complaints have complete and accurate records, improving the reliability of future analyses. Focus on cases involving monetary and non-monetary relief, addressing the underlying causes of higher dissatisfaction levels to improve overall customer resolution satisfaction.
+
+#### 7.	Enhance Data Integrity and Customer Feedback Processes: 
+
+Conduct a detailed review to understand why 94.22% of dispute data from 2017-2020 was marked as N/A, identifying whether the cause is technical, procedural, or systemic, and use these insights to improve future data collection. Implement uniform data collection standards to ensure consistency across all years and avoid gaps. Where possible, analyze annual trends separately to detect smaller patterns and better explain dispute trends. Additionally, investigate qualitative customer feedback from 2017-2020 to supplement the incomplete data and gain a deeper understanding of customer sentiment.
 ________________________________________
 
