@@ -102,7 +102,7 @@ Our analysis shows that the average response time for addressing customer compla
 ## METHODOLOGY
 ### Data Cleaning
 
-Conducted data cleaning using python Click here to view my code base 
+Conducted data cleaning using python [Click here](https://github.com/paschaldubem/CUSTOMER-COMPLAINTS-MANAGEMENT-AND-RESPONSE-ANALYSIS/blob/main/TD_%20python_script.ipynb) to view my code base 
 
 
 ### Exploratory Data Analysis
@@ -313,7 +313,7 @@ Dashboards include:
 -  Complaint volumes by product, state, and year.
 -  Trends in submission channel preferences.
 -  Response efficiency metrics.
--  To access the interactive PowerBI dashboard Click Here
+-  To access the interactive PowerBI dashboard [Click Here](https://app.powerbi.com/view?r=eyJrIjoiYmZlMDU1YWItMjJkYS00MmNmLTk3MDMtNmZjZjE5YjgwZmFiIiwidCI6IjI5ZTg2YjVlLTVkMDctNGExNC1hZDQ0LWFiOTQ3NmUwZGE4NyJ9)
 ________________________________________
 
 ## CONCLUSION
