@@ -1,7 +1,23 @@
 # CUSTOMER COMPLAINTS MANAGEMENT AND RESPONSE ANALYSIS USING PYTHON AND POWERBI
 
+
+________________________________________
+## ABSTRACT 
+
+
+
+![DASBOARD 1](https://github.com/user-attachments/assets/b73a06fa-3d5a-4520-818e-8b338a8413bb)
+
+
+
+
+
+
+
+This report examines customer financial complaints to uncover trends in customer grievances, company responses, and operational efficiency. Using data visualization and analysis techniques, I identified key factors affecting complaint resolution and customer satisfaction. The findings aim to guide strategic improvements in customer advocacy and service delivery.
+________________________________________
+
 ## TABLE OF CONTENT 
-- [ABSTRACT](#abstract)
 - [INTRODUCTION](#introduction)
   -  [Background](#background)
   -  [Problem Statement](#problem-statement)
@@ -23,21 +39,6 @@
   -  [Recommendations](#recommendations)
 
 
-________________________________________
-## ABSTRACT 
-
-
-
-![DASBOARD 1](https://github.com/user-attachments/assets/b73a06fa-3d5a-4520-818e-8b338a8413bb)
-
-
-
-
-
-
-
-This report examines customer financial complaints to uncover trends in customer grievances, company responses, and operational efficiency. Using data visualization and analysis techniques, I identified key factors affecting complaint resolution and customer satisfaction. The findings aim to guide strategic improvements in customer advocacy and service delivery.
-________________________________________
 ## INTRODUCTION
 ### Background
 Understanding customer complaints is essential for enhancing satisfaction and operational efficiency. Cumulus Financials’ dataset of customer financial complaints provide a unique opportunity to investigate the nature of customer grievances, company responses, and the efficiency of resolutions.
