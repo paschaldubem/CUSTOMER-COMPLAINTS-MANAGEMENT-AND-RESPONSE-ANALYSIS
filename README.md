@@ -51,7 +51,9 @@ ________________________________________
 
 Cumulus Financial services’ database structure seen below, consists of a single table with a total of 75,000 rows and 17 unique columns containing records spanning 2011 – 2020. 
 
-![image](https://github.com/user-attachments/assets/8b52d5ee-119e-4c8f-b7d5-547216479855)
+![CUMULUS FINANCIAL CUSTOMER COMPLAINTS MANAGEMENT AND RESPONSE ANALYSIS spreadsheet snapshot ](https://github.com/user-attachments/assets/09cb883b-57bc-4a01-b186-5253cddac5de)
+
+
 
 -	Complaint ID: Unique identifier for each complaint
 -	Date Submitted: Date when the complaint was submitted
