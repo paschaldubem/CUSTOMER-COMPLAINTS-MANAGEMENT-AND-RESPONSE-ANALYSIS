@@ -80,7 +80,7 @@ It was confirmed that credit cards and checking accounts product categories have
 
 Geographically, California, New York, and Florida recorded the highest complaint volumes, most likely a result of their high population densities; Additionally online submissions was the most utilized complaint channels, with web-based responses achieving the fastest resolution times and while 98.1% of the time these complaints were resolved timely, the insight remains tentative as gaps in dispute data particularly the 94.22% N/A responses from 2017-2020 underscore a need for improved data collection and reporting to ensure actionable insights. 
 
-Below is an overview of a page from the powerbi dashboard, and more insights are included throughout the report. The dashboard can be viewed and downloaded [HERE](https://app.powerbi.com/view?r=eyJrIjoiYmZlMDU1YWItMjJkYS00MmNmLTk3MDMtNmZjZjE5YjgwZmFiIiwidCI6IjI5ZTg2YjVlLTVkMDctNGExNC1hZDQ0LWFiOTQ3NmUwZGE4NyJ9)
+Below is an overview of a page from the powerbi dashboard, and more insights are included throughout the report. The dashboard can be viewed [HERE](https://app.powerbi.com/view?r=eyJrIjoiYmZlMDU1YWItMjJkYS00MmNmLTk3MDMtNmZjZjE5YjgwZmFiIiwidCI6IjI5ZTg2YjVlLTVkMDctNGExNC1hZDQ0LWFiOTQ3NmUwZGE4NyJ9)
 
 
 ![DASBOARD 1](https://github.com/user-attachments/assets/b73a06fa-3d5a-4520-818e-8b338a8413bb)
